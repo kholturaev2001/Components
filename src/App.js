@@ -19,6 +19,7 @@ import { Link, Outlet, Route, Routes, useParams } from "react-router-dom";
 import WebWorker from "./components/WebWorker/WebWorker";
 import YandexMap from "./components/YandexMap/YandexMap";
 import SaveInLocalStorage from "./components/SaveInLocalStorage/SaveInLocalStorage";
+import UseMemoSample from "./components/UseMemoSample/UseMemoSample";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         path="/"
         element={
           <div>
-            <SaveInLocalStorage />
+            <UseMemoSample />
           </div>
         }
       />
