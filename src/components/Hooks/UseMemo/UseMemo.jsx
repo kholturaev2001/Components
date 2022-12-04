@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState, useMemo } from "react";
 
-const UseMemoSample = () => {
+const UseMemo = () => {
   const [number, setNumber] = useState(0);
   const [dark, setDark] = useState(false);
   const doubleNumber = useMemo(() => {
@@ -34,7 +34,7 @@ const UseMemoSample = () => {
   );
 };
 
-export default UseMemoSample;
+export default UseMemo;
 
 function slowFunction(num) {
     console.log("Calling Slow Funciton");

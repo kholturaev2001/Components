@@ -19,7 +19,8 @@ import { Link, Outlet, Route, Routes, useParams } from "react-router-dom";
 import WebWorker from "./components/WebWorker/WebWorker";
 import YandexMap from "./components/YandexMap/YandexMap";
 import SaveInLocalStorage from "./components/SaveInLocalStorage/SaveInLocalStorage";
-import UseMemoSample from "./components/UseMemoSample/UseMemoSample";
+import UseMemo from "./components/Hooks/UseMemo/UseMemo";
+import UseCallback from "./components/Hooks/UseCallback/UseCallback";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         path="/"
         element={
           <div>
-            <UseMemoSample />
+            <UseCallback />
           </div>
         }
       />
