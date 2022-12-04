@@ -1,0 +1,26 @@
+.statisticsCont {
+  margin: auto;
+  width: 785px;
+  display: flex;
+  flex-wrap: wrap;
+  > div {
+    &:first-child {
+      background: linear-gradient(180deg, #0063ff 0%, #0032ba 100%);
+    }
+    &:nth-child(2) {
+      background: linear-gradient(180deg, #0063ff 0%, #0d36a6 100%);
+    }
+  }
+  &:nth-child(3) {
+    background: linear-gradient(180deg, #0063ff 0%, #0032ba 100%);
+  }
+  &:nth-child(4) {
+    background: linear-gradient(180deg, #0060f8 0%, #0032ba 100%);
+  }
+  &:nth-child(5) {
+    background: linear-gradient(180deg, #0063FF 0%, #0D36A6 100%);
+  }
+  &:nth-child(6) {
+    background: linear-gradient(180deg, #0063FF 0%, #0032BA 100%);
+  }
+}

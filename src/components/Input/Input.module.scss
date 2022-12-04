@@ -1,0 +1,35 @@
+.main {
+  margin: 100px;
+  > label {
+    display: block;
+    margin: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+  }
+  > p {
+    display: grid;
+    grid-template-rows: 35px 20px;
+    > input {
+      border-radius: 25px;
+      border: 1px solid #e1e1e1;
+      min-width: 180px;
+      max-width: 250px;
+      padding: 8px 20px;
+      font-size: 14px;
+      &:focus {
+        border: 1px solid #bbdefb;
+        outline: none;
+      }
+      &:disabled {
+        background: #eeeeee;
+      }
+    }
+    > .errTxt {
+      color: #ee1111;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    width: 780px;
+    height: 100px;
+    display: flex;
+    border-radius: 100px;
+    background: linear-gradient(93.61deg, #0063ff -0.61%, #008aff 98.07%);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    .textCont {
+      margin-left: 60px;
+      > p:first-child {
+        font-size: 24px;
+        line-height: 38px;
+        letter-spacing: 0.15px;
+      }
+    }
+    .circleCont {
+      overflow: hidden;
+      border-radius: 0 50px 50px 0;
+      height: 100px;
+      display: flex;
+      .bigCircle {
+        width: 250px;
+        height: 250px;
+        background: linear-gradient(
+          133.55deg,
+          rgba(255, 255, 255, 0.3) 25.11%,
+          rgba(255, 255, 255, 0) 97.32%
+        );
+        border-radius: 50%;
+        margin-top: 50px;
+        margin-right: -90px;
+      }
+      .smallCircle {
+        width: 120px;
+        height: 120px;
+        background: linear-gradient(
+          133.55deg,
+          rgba(255, 255, 255, 0.3) 25.11%,
+          rgba(255, 255, 255, 0) 97.32%
+        );
+        border-radius: 50%;
+        margin-right: -50px;
+        margin-top: 50px;
+        backdrop-filter: blur(1.5px);
+      }
+    }
+    .imgCont {
+      position: relative;
+      top: -110px;
+      > .mainImg {
+        position: absolute;
+        left: 15px;
+        top: -5px;
+      }
+    }
+  }
+}
