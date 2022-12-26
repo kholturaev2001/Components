@@ -27,6 +27,7 @@ import AntButton from "./components/AntDesign/Button/AntButton";
 import AntInput from "./components/AntDesign/Input/AntInput";
 import AntSelect from "./components/AntDesign/Select/AntSelect";
 import AntForm from "./components/AntDesign/Form/AntForm";
+import AntTable from "./components/AntDesign/Table/AntTable";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
         path="/"
         element={
           <div>
-            <AntForm />
+            <AntTable />
           </div>
         }
       />
