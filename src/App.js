@@ -26,6 +26,7 @@ import GetIPAdress from './components/GetIPAdress/GetIPAdress';
 import AntButton from "./components/AntDesign/Button/AntButton";
 import AntInput from "./components/AntDesign/Input/AntInput";
 import AntSelect from "./components/AntDesign/Select/AntSelect";
+import AntForm from "./components/AntDesign/Form/AntForm";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
         path="/"
         element={
           <div>
-            <AntSelect />
+            <AntForm />
           </div>
         }
       />
