@@ -21,6 +21,9 @@ import YandexMap from "./components/YandexMap/YandexMap";
 import SaveInLocalStorage from "./components/SaveInLocalStorage/SaveInLocalStorage";
 import UseMemo from "./components/Hooks/UseMemo/UseMemo";
 import UseCallback from "./components/Hooks/UseCallback/UseCallback";
+import UseReducer from "./components/Hooks/UseReducer/UseReducer";
+import GetIPAdress from './components/GetIPAdress/GetIPAdress';
+import AntButton from "./components/AntDesign/AntButton";
 
 function App() {
   return (
@@ -29,7 +32,7 @@ function App() {
         path="/"
         element={
           <div>
-            <UseCallback />
+            <AntButton />
           </div>
         }
       />

@@ -2,7 +2,7 @@ import React, { useState, useCallback } from "react";
 import List from "./List";
 
 const UseCallback = () => {
-  const [number, setNumber] = useState(1);
+  const [number, setNumber] = useState(12);
   const [dark, setDark] = useState(false);
 
   /* The main difference of useCallback between useMemo is that, useMemo takes a 
