@@ -23,7 +23,9 @@ import UseMemo from "./components/Hooks/UseMemo/UseMemo";
 import UseCallback from "./components/Hooks/UseCallback/UseCallback";
 import UseReducer from "./components/Hooks/UseReducer/UseReducer";
 import GetIPAdress from './components/GetIPAdress/GetIPAdress';
-import AntButton from "./components/AntDesign/AntButton";
+import AntButton from "./components/AntDesign/Button/AntButton";
+import AntInput from "./components/AntDesign/Input/AntInput";
+import AntSelect from "./components/AntDesign/Select/AntSelect";
 
 function App() {
   return (
@@ -32,7 +34,7 @@ function App() {
         path="/"
         element={
           <div>
-            <AntButton />
+            <AntSelect />
           </div>
         }
       />
