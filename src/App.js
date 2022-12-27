@@ -22,14 +22,15 @@ import SaveInLocalStorage from "./components/SaveInLocalStorage/SaveInLocalStora
 import UseMemo from "./components/Hooks/UseMemo/UseMemo";
 import UseCallback from "./components/Hooks/UseCallback/UseCallback";
 import UseReducer from "./components/Hooks/UseReducer/UseReducer";
-import GetIPAdress from './components/GetIPAdress/GetIPAdress';
+import GetIPAdress from "./components/GetIPAdress/GetIPAdress";
 import AntButton from "./components/AntDesign/Button/AntButton";
 import AntInput from "./components/AntDesign/Input/AntInput";
 import AntSelect from "./components/AntDesign/Select/AntSelect";
 import AntForm from "./components/AntDesign/Form/AntForm";
 import AntTable from "./components/AntDesign/Table/AntTable";
-import AntDatePicker from './components/AntDesign/DatePicker/AntDatePicker';
-import AntSpin from './components/AntDesign/Spin/AntSpin';
+import AntDatePicker from "./components/AntDesign/DatePicker/AntDatePicker";
+import AntSpin from "./components/AntDesign/Spin/AntSpin";
+import AntProgress from './components/AntDesign/Progress/AntProgress';
 
 function App() {
   return (
@@ -37,9 +38,8 @@ function App() {
       <Route
         path="/"
         element={
-          <div style={{margin: '50px'}}>
-            <AntSpin spinning={true} />
-            
+          <div style={{ margin: "50px" }}>
+            <AntProgress />
           </div>
         }
       />
