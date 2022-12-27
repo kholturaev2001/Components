@@ -5,7 +5,7 @@ const AntDatePicker = () => {
   return (
     <div style={{ margin: "50px" }}>
       <div>
-        <DatePicker picker="date" bordered={true} />
+        <DatePicker picker="date" />
       </div>
       <div>
         <DatePicker.RangePicker />

@@ -29,6 +29,7 @@ import AntSelect from "./components/AntDesign/Select/AntSelect";
 import AntForm from "./components/AntDesign/Form/AntForm";
 import AntTable from "./components/AntDesign/Table/AntTable";
 import AntDatePicker from './components/AntDesign/DatePicker/AntDatePicker';
+import AntSpin from './components/AntDesign/Spin/AntSpin';
 
 function App() {
   return (
@@ -36,8 +37,9 @@ function App() {
       <Route
         path="/"
         element={
-          <div>
-            <AntDatePicker />
+          <div style={{margin: '50px'}}>
+            <AntSpin spinning={true} />
+            
           </div>
         }
       />
