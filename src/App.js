@@ -28,6 +28,7 @@ import AntInput from "./components/AntDesign/Input/AntInput";
 import AntSelect from "./components/AntDesign/Select/AntSelect";
 import AntForm from "./components/AntDesign/Form/AntForm";
 import AntTable from "./components/AntDesign/Table/AntTable";
+import AntDatePicker from './components/AntDesign/DatePicker/AntDatePicker';
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
         path="/"
         element={
           <div>
-            <AntTable />
+            <AntDatePicker />
           </div>
         }
       />

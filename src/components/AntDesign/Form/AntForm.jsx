@@ -1,13 +1,37 @@
-import { Button, Form, Input } from "antd";
-import React from "react";
+import { Button, Form, Input, message, Alert } from "antd";
+import React, { useState } from "react";
 
 const AntForm = () => {
+  const [showAlert, setShowAlert] = useState(false);
+
   const onFinish = (e) => {
     console.log(e);
+
+    setTimeout(() => {
+      setShowAlert(true);
+      message.error("Login error!", 2 /* alert will stay 2 seconds */);
+    }, 2000);
+
+    setTimeout(() => {
+      message.warning("Login failed!", 2 /* alert will stay 2 seconds */);
+    }, 5000);
+
+    setTimeout(() => {
+      message.success("Login successful!", 2 /* alert will stay 2 seconds */);
+    }, 8000);
   };
 
   return (
     <div style={{ width: "400px", margin: "50px" }}>
+      {showAlert && (
+        <Alert
+          type="error"
+          message="Error"
+          description="There was an error on login"
+          closable
+        />
+      )}
+
       <Form onFinish={onFinish} autoComplete="off">
         <Form.Item
           label="User Name"
