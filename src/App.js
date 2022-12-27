@@ -31,6 +31,7 @@ import AntTable from "./components/AntDesign/Table/AntTable";
 import AntDatePicker from "./components/AntDesign/DatePicker/AntDatePicker";
 import AntSpin from "./components/AntDesign/Spin/AntSpin";
 import AntProgress from './components/AntDesign/Progress/AntProgress';
+import TableWithAPIInteraction from "./components/AntDesign/TableWithAPIInteraction/TableWithAPIInteraction";
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
         path="/"
         element={
           <div style={{ margin: "50px" }}>
-            <AntProgress />
+            <TableWithAPIInteraction />
           </div>
         }
       />
