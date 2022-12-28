@@ -82,8 +82,39 @@ const TableWithCustomSelection = () => {
             setAlreadySelected(keys);
           },
           getCheckboxProps: (record) => ({
-            disabled: record.grade === "C",
+            // disabled: record.grade === "C",
           }),
+          // hideSelectAll: true,
+          selections: [
+            Table.SELECTION_NONE,
+            Table.SELECTION_ALL,
+            Table.SELECTION_INVERT,
+            {
+              key: "even",
+              text: "Select Even Rows",
+              onSelect: (allKeys) => {
+                const selectedKeys = allKeys.filter((key) => {
+                  return key % 2 === 0;
+                });
+                setAlreadySelected(selectedKeys);
+              },
+            },
+            {
+              key: "excellent",
+              text: "Select Students with Excellent Grads",
+              onSelect: (allKeys) => {
+                const selectedKeys = allKeys.filter((key) => {
+                  console.log("key is ", key);
+                  const isExcellent = dataSource.find((student) => {
+                    return student.key == key && student.grade.includes("A");
+                  });
+
+                  return isExcellent;
+                });
+                setAlreadySelected(selectedKeys);
+              },
+            },
+          ],
         }}
       />
     </div>

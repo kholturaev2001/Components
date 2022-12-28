@@ -33,6 +33,7 @@ import AntSpin from "./components/AntDesign/Spin/AntSpin";
 import AntProgress from './components/AntDesign/Progress/AntProgress';
 import TableWithAPIInteraction from "./components/AntDesign/TableWithAPIInteraction/TableWithAPIInteraction";
 import TableWithCustomSelection from './components/AntDesign/TableWithCustomSelection/TableWithCustomSelection';
+import AntIcons from "./components/AntDesign/Icons/AntIcons";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
         path="/"
         element={
           <div style={{ margin: "50px" }}>
-            <TableWithCustomSelection />
+            <AntIcons />
           </div>
         }
       />
